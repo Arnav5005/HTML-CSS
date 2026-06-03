@@ -6,7 +6,7 @@
     <link href="./output.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body class="min-h-screen flex items-center justify-center">
     <!-- <h1 class="text-amber-500">TEST</h1>  --> <!-- this will appear small because - -->
 
     <!-- Tailwind uses a CSS reset called Preflight It : 
@@ -14,6 +14,33 @@
        2. Removes default font sizes
        3. Makes everything consistent across browsers -->
 
-       <h1 class="text-amber-600 text-4xl m-4">TEST</h1>
+    <!-- <h1 class="text-amber-600 text-4xl">TEST</h1> --> <!-- if we didn't use min-h-screen / h-screen then content would be placed center horizontally but won't be placed center vertically aas we only wrote TEST so currently TEST height is screen's height -->
+       
+    <!-- centering text using grid -->
+
+    <!-- <div class="grid place-content-center h-screen">
+        <h1 class="text-amber-200 text-4xl">TEST</h1>
+    </div> -->
+
+    <!-- <div>
+        <div class="flex items items-center bg-white p-6">
+            <div class="max-w-2xs">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg" alt="yt">
+            </div>
+        
+            <div>
+                <h1 class="text-2xl">Arnav pratap singh</h1>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="flex items-center bg-white p-10 border-4 border-red-500">
+        <img class="h-16" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg">
+        <h1 class="ml-4 text-2xl text-black">Arnav pratap singh</h1>
+    </div>
+
+    
+    
+
 </body>
 </html>
